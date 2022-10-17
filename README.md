@@ -1,6 +1,6 @@
 # Vet clinic database: animals table
 
-This repository includes files with plain SQL that can be used to recreate a database:
+This repository includes files with plain SQL that can be used to create a database:
 
 - Use schema.sql to create all tables.
 - Use data.sql to populate tables with sample data.
