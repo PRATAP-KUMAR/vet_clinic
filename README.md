@@ -1,12 +1,20 @@
 # Vet clinic database: animals table
 
-## Getting Started
-
 This repository includes files with plain SQL that can be used to recreate a database:
 
 - Use schema.sql to create all tables.
 - Use data.sql to populate tables with sample data.
 - Check queries.sql for examples of queries that can be run on a newly created database.
+
+## Getting Started
+
+To get a local copy, follow these simple example steps.
+
+````
+git clone https://github.com/PRATAP-KUMAR/vet_clinic
+cd vet_clinic
+ls
+````
 
 
 ## Authors
