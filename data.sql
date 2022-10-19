@@ -43,7 +43,7 @@ INSERT INTO animals (
         NEUTERED,
         WEIGHT_KG
     )
-VALUES (5, 'Charmander', '2020-02-08', 0, FALSE, 11.00);
+VALUES (5, 'Charmander', '2020-02-08', 0, FALSE, -11.00);
 INSERT INTO animals (
         ID,
         NAME,
@@ -52,7 +52,7 @@ INSERT INTO animals (
         NEUTERED,
         WEIGHT_KG
     )
-VALUES (6, 'Plantmon', '2021-11-15', 2, TRUE, 5.70);
+VALUES (6, 'Plantmon', '2021-11-15', 2, TRUE, -5.70);
 INSERT INTO animals (
         ID,
         NAME,
@@ -61,7 +61,7 @@ INSERT INTO animals (
         NEUTERED,
         WEIGHT_KG
     )
-VALUES (7, 'Squirtle', '1993-04-02', 3, FALSE, 12.13);
+VALUES (7, 'Squirtle', '1993-04-02', 3, FALSE, -12.13);
 INSERT INTO animals (
         ID,
         NAME,
@@ -70,7 +70,7 @@ INSERT INTO animals (
         NEUTERED,
         WEIGHT_KG
     )
-VALUES (8, 'Angemon', '2005-06-12', 1, TRUE, 45.00);
+VALUES (8, 'Angemon', '2005-06-12', 1, TRUE, -45.00);
 INSERT INTO animals (
         ID,
         NAME,
@@ -98,3 +98,28 @@ INSERT INTO animals (
         WEIGHT_KG
     )
 VALUES (11, 'Ditto', '2022-05-14', 4, TRUE, 22.00);
+INSERT INTO owners (FULL_NAME, AGE)
+VALUES ('Sam Smith', 34);
+INSERT INTO owners (FULL_NAME, AGE)
+VALUES ('Jennifer Orwell', 19);
+INSERT INTO owners (FULL_NAME, AGE)
+VALUES ('Bob', 45);
+INSERT INTO owners (FULL_NAME, AGE)
+VALUES ('Melody Pond', 77);
+INSERT INTO owners (FULL_NAME, AGE)
+VALUES ('Dean Winchester', 14);
+INSERT INTO owners (FULL_NAME, AGE)
+VALUES ('Jodie Whittaker', 38);
+INSERT INTO species (NAME)
+VALUES ('Pokemon');
+INSERT INTO species (NAME)
+VALUES ('Digimon');
+
+UPDATE animals SET species_id=1;
+UPDATE animals SET species_id=2 WHERE name LIKE '%mon';
+
+UPDATE animals SET owner_id=1 WHERE name = 'Agumon';
+UPDATE animals SET owner_id=2 WHERE name IN ('Pikachu', 'Gabumon');
+UPDATE animals SET owner_id=3 WHERE name IN ('Devimon', 'Plantmon');
+UPDATE animals SET owner_id=4 WHERE name IN ('Charmander', 'Squirtle', 'Blossom');
+UPDATE animals SET owner_id=5 WHERE name IN ('Angemon', 'Boarmon');
