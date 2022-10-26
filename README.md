@@ -6,6 +6,11 @@ This repository includes files with plain SQL of animals database:
 - Use data.sql to populate tables with sample data.
 - Check queries.sql for examples of queries that can be run on a newly created database.
 
+## Schema Diagram
+Link to the schema-diagram vet-clinic database https://drawsql.app/teams/pratap/diagrams/vet-clinic-db-schema-diagram
+
+![vet-clinic-schema-diagram](https://user-images.githubusercontent.com/40719899/198034169-7aea9e45-232c-46cf-b847-21ab132594a1.png)
+
 ## Getting Started
 
 To get a local copy, follow these simple example steps.
